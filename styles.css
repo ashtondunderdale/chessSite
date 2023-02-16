@@ -1,40 +1,89 @@
 html{
-    background-color: rgb(56, 56, 56);
+    background-color: rgb(34, 34, 34);
 }
+
+a {
+    text-decoration: none;
+  }
 
 .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
-  
-  .box {
+    
+}
+
+.box {
     width: 30%;
-    height: 200px;
+    height: 700px;
     background-color: #E6E6FA;
-    margin-bottom: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #ddd;
+    margin: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease-in-out;
+    transition: transform 0.2s ease-in-out;
+
   }
   
-  .box-title {
+  .box:hover {
+    transform: translateY(-10px);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+
+.box-title {
+    font-size: 60px;
+    text-align: center;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+.button {
+    display: block;
+    margin: 0 auto;
     font-size: 24px;
-    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-color: #6d6d6d;
+    border: none;
+    border-radius: 5px;
+    padding: 20px 50px;
+    margin-top: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s ease-in-out;
   }
   
-  .intro {
-    width: 100%;
-    height: 150px;
-    background-color: #F0F8FF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #ddd;
+  .button:hover {
+    background-color: #9e9e9e;
+    cursor: pointer;
+    animation: shake 0.5s ease-in-out;
   }
   
-  .intro h2 {
-    font-size: 32px;
-    text-align: center;
+  .button:active {
+    background-color: #414141;
+    transition: background-color 0s;
+    animation: none;
+  }
+  
+  @keyframes shake {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-2px);
+    }
+    50% {
+      transform: translateX(2px);
+    }
+    75% {
+      transform: translateX(-2px);
+    }
+    100% {
+      transform: translateX(0);
+    }
   }
