@@ -33,7 +33,7 @@ a{
     float: left;
     font-size: 24px;
     font-weight: bold;
-    color: white;
+    color: rgb(255, 255, 255);
     background-color: #6d6d6d;
     border: none;
     border-radius: 5px;
@@ -77,27 +77,3 @@ a{
   transition: width 0.3s ease-in-out;
 }
 
-.tooltip {
-  position: relative;
-  display: inline-block;
-}
-
-.tooltip .tooltiptext {
-  width: 200px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  left: 50%;
-  bottom: 150%;
-  margin-left: -100px;
-  opacity: 0;
-  transition: opacity 0.2s;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
-}
