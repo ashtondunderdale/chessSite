@@ -87,3 +87,15 @@ a {
       transform: translateX(0);
     }
   }
+
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: left;
+    padding: 3px 20px;
+    background-color: rgb(139, 139, 139);
+    color: rgb(0, 0, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
