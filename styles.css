@@ -121,6 +121,7 @@ h1{
   background-position: 0px 270px;
   margin-right: 20px;
   margin-left: 30px;
+  transition: transform 0.5s ease-out;
 }
 
 .small-box {
@@ -131,4 +132,33 @@ h1{
   background-size: cover;
   background-position: center;
   margin-right: 30px;
+  transition: transform 0.5s ease-out;
+}
+
+.large-box:hover {
+  transform: translateY(-10px);
+}
+
+.small-box:hover {
+  transform: translateY(-10px);
+}
+
+.small-box-third{
+  flex-basis: 33.33%;
+  height: 250px;
+  width: 30%;
+  background-color: #eee;
+  background-image: url(/media/playerprofiles.jpg);
+  background-size: cover;
+  background-position: bottom;
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-bottom: 200px;
+  margin-top: -30px;
+  transition: transform 0.5s ease-out;
+
+}
+
+.small-box-third:hover {
+  transform: translateY(-10px);
 }
