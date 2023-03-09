@@ -6,6 +6,11 @@ a {
     text-decoration: none;
   }
 
+h1{
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -98,4 +103,32 @@ a {
     background-color: rgb(139, 139, 139);
     color: rgb(0, 0, 0);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.large-box {
+  flex-basis: 80%;
+  height: 250px;
+  width: 1500px;
+  background-color: #ccc;
+  background-image: url(/media/magnuscarlsen.jpg);
+  background-size: cover;
+  background-position: 0px 270px;
+  margin-right: 20px;
+  margin-left: 30px;
+}
+
+.small-box {
+  flex-basis: 20%;
+  height: 250px;
+  background-color: #eee;
+  background-image: url(/media/stockfish.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-right: 30px;
 }
